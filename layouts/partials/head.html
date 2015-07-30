@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+    	<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+    	<meta http-equiv="content-language" content="{{ with .Site.LanguageCode }}{{ . }}{{ end }}" />
+    	{{ .Hugo.Generator }}
+		<!--[if lte IE 8]><script src="{{ .Site.BaseURL }}js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ .Site.BaseURL }}/css/ie8.css" /><![endif]-->
+	</head>
