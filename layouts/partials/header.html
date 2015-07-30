@@ -1,0 +1,5 @@
+{{ "<!-- Header -->" | safeHTML }}
+<header id="header">
+	<a href="#" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.avatar }}" alt="" /></a>
+	<h1>{{ .Site.Params.bio | markdownify }}</h1>
+</header>
