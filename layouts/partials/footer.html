@@ -1,0 +1,31 @@
+{{ "<!-- Footer -->" | safeHTML }}
+<footer id="footer">
+	<ul class="icons">
+		{{ with .Site.Params.sidebar.twitter }}
+		<li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.github }}
+		<li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.dribbble }}
+		<li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.contact.email }}
+		<li><a href="mailto:{{ . }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+		{{ end }}
+	</ul>
+
+	<ul class="copyright">
+		{{ range .Site.Params.sidebar.copyright }}
+		<li>{{ . | markdownify }}</li>
+		{{ end }}
+	</ul>
+</footer>
+
+{{ "<!-- Scripts -->" | safeHTML }}
+<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery.poptrox.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/skel.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/util.js"></script>
+<!--[if lte IE 8]><script src="{{ .Site.BaseURL }}js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ .Site.BaseURL }}js/main.js"></script>
