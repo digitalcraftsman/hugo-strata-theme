@@ -1,0 +1,14 @@
+{{ partial "head" . }}
+	<body id="top">
+		{{ partial "header" . }}
+
+		{{ "<!-- Main -->" | safeHTML }}
+		<div id="main">
+			{{ partial "about" . }}
+			{{ partial "portfolio" . }}
+			{{ partial "contact" . }}
+		</div>
+
+		{{ partial "footer" . }}
+	</body>
+</html>
