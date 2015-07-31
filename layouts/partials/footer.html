@@ -29,3 +29,13 @@
 <script src="{{ .Site.BaseURL }}js/util.js"></script>
 <!--[if lte IE 8]><script src="{{ .Site.BaseURL }}js/ie/respond.min.js"></script><![endif]-->
 <script src="{{ .Site.BaseURL }}js/main.js"></script>
+
+{{ with .Site.Params.googleAnalytics }}
+{{ "<!-- Google Analytics -->" | safeHTML }}
+<script>
+  var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+{{ end }}
