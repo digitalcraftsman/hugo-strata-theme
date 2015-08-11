@@ -6,7 +6,7 @@
 		<article class="6u 12u$(xsmall) work-item">
 			<a href="{{ .Site.BaseURL }}images/{{ .image }}" class="image fit thumb"><img src="{{ .Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
 			<h3>{{ .title }}</h3>
-			<p>{{ .description }}</p>
+			<p>{{ .description | markdownify }}</p>
 		</article>
 		{{ end }}
 	</div>
