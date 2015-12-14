@@ -25,7 +25,7 @@ Inside the folder of your Hugo site run:
 
     $ mkdir themes
     $ cd themes
-    $ git clone git@github.com:digitalcraftsman/hugo-strata-theme.git
+    $ git clone https://github.com/digitalcraftsman/hugo-strata-theme.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
