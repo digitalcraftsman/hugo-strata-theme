@@ -88,6 +88,10 @@ In order to see your site in action, run Hugo's built-in local server.
 
 Now enter [`localhost:1313`](//localhost:1313) in the address bar of your browser.
 
+To be able to access your site from anywhere, use the following:
+
+    $ hugo server -w --bind=[Your IP] --port=80 --baseURL=https://example.com --appendPort=false
+
 
 ## Contributing
 
