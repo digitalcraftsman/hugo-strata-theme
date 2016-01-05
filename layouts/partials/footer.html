@@ -1,6 +1,9 @@
 {{ "<!-- Footer -->" | safeHTML }}
 <footer id="footer">
 	<ul class="icons">
+		{{ with .Site.Params.sidebar.facebook }}
+               <li><a href="//facebook.com/{{ . }}" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+               {{ end }}
 		{{ with .Site.Params.sidebar.twitter }}
 		<li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 		{{ end }}
