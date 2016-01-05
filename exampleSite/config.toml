@@ -22,6 +22,7 @@ theme = "hugo-strata-theme"
 		twitter = "spf13"
 		github = "spf13"
 		dribbble = ""
+		facebook = ""
 
 		copyright = [
 			"&copy; John Doe",
