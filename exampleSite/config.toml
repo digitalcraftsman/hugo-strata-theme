@@ -23,6 +23,8 @@ theme = "hugo-strata-theme"
 		github = "spf13"
 		dribbble = ""
 		facebook = ""
+		googleplus = ""
+		flickr = ""
 
 		copyright = [
 			"&copy; John Doe",

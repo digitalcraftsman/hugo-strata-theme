@@ -1,6 +1,9 @@
 {{ "<!-- Footer -->" | safeHTML }}
 <footer id="footer">
 	<ul class="icons">
+		{{ with .Site.Params.sidebar.googleplus }}
+			<li><a href="//plus.google.com/+{{ . }}" target="_blank" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
+		{{ end }}
 		{{ with .Site.Params.sidebar.facebook }}
                <li><a href="//facebook.com/{{ . }}" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                {{ end }}
@@ -12,6 +15,9 @@
 		{{ end }}
 		{{ with .Site.Params.sidebar.dribbble }}
 		<li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+		{{ end }}
+		{{ with .Site.Params.sidebar.flickr }}
+		<li><a href="//flickr.com/photos/{{ . }}" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
 		{{ end }}
 		{{ with .Site.Params.contact.email }}
 		<li><a href="#contact-form" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
