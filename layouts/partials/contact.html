@@ -1,11 +1,13 @@
 <!-- Three -->
 <section id="three">
+	{{ if isset .Site.Params.contact "email" }}
 	{{ with .Site.Params.contact.title }}<h2>{{ . }}</h2>{{ end }}
 	{{ with .Site.Params.contact.content }}<p>{{ . }}</p>{{ end }}
+	{{ end }}
 	<div class="row" id="contact-form">
+		{{ if isset .Site.Params.contact "email" }}
 		<div class="8u 12u$(small)">
-			<form action="//formspree.io/{{ .Site.Params.contact.email }}"
-      method="POST">
+			<form action="//formspree.io/{{ .Site.Params.contact.email }}" method="POST">
 				<div class="row uniform 50%">
 					<input type="hidden" name="_subject" value="New email from your portfolio" />
 					<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="{{ .Site.Params.contact.form.name }}" required/></div>
@@ -19,6 +21,9 @@
 				</div>
 			</form>
 		</div>
+		{{ else }}
+		<div class="8u 12u$(small)">&nbsp;</div>
+		{{ end }}
 		<div class="4u$ 12u$(small)">
 			<ul class="labeled-icons">
 				{{ if isset .Site.Params.contact "address" }}
@@ -33,6 +38,12 @@
 				<li>
 					<h3 class="icon fa-mobile"><span class="label"></span></h3>
 					{{ .Site.Params.contact.phone }}
+				</li>
+				{{ end }}
+				{{ if isset .Site.Params.contact "jabber" }}
+				<li>
+					<h3 class="icon fa fa-comments"><span class="label"></span></h3>
+					<a href="#">{{ .Site.Params.contact.jabber }}</a>
 				</li>
 				{{ end }}
 				{{ if isset .Site.Params.contact "email" }}
