@@ -13,6 +13,9 @@
 		{{ with .Site.Params.sidebar.github }}
 		<li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 		{{ end }}
+		{{ with .Site.Params.sidebar.linkedin }}
+		<li><a href="{{ . }}" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+		{{ end }}
 		{{ with .Site.Params.sidebar.dribbble }}
 		<li><a href="//dribbble.com/{{ . }}" target="_blank" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 		{{ end }}
