@@ -8,6 +8,10 @@
 				{{ partial "about" . }}
 			{{ end }}
 
+			{{ if not .Site.Params.recentposts.hide }}
+				{{ partial "recent-posts" . }}
+			{{ end }}
+
 			{{ if not .Site.Params.portfolio.hide }}
 				{{ partial "portfolio" . }}
 			{{ end }}

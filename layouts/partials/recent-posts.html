@@ -1,0 +1,7 @@
+<section id="zero">
+	{{ with .Site.Params.recentposts.title }}<h2>{{ . }}</h2>{{ end }}
+
+	{{ range first 10 .Data.Pages }}
+		<h3 class="recent-post"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+	{{ end }}
+</section>

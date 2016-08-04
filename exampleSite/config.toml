@@ -2,6 +2,9 @@ baseurl = "http://replace-this-with-your-hugo-site.com/"
 languageCode = "en-us"
 title = "Strata"
 theme = "hugo-strata-theme"
+disqusShortname = "spf13"
+# Define how many posts should appear on a site
+paginate = 10
 
 [params]
 	# To provide some metadata for search engines feel free to add a few
@@ -11,6 +14,9 @@ theme = "hugo-strata-theme"
 
 	# Enable Google Analytics by inserting your tracking code
 	googleAnalytics = ""
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
 
 
 	[params.sidebar]
@@ -33,6 +39,10 @@ theme = "hugo-strata-theme"
 			"Demo Images: [Unsplash](//unsplash.com/)"
 		]
 
+
+	[params.recentposts]
+		hide = false
+		title = "Recent posts"
 
 	[params.about]
 		hide  = false
