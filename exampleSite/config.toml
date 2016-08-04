@@ -35,11 +35,13 @@ theme = "hugo-strata-theme"
 
 
 	[params.about]
+		hide  = false
 		title = "Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque."
 		content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
 
 
 	[params.portfolio]
+		hide  = false
 		title = "Recent Work"
 
 		# The images and thumbnails are stored under static/images
@@ -82,6 +84,7 @@ theme = "hugo-strata-theme"
 
 
 	[params.contact]
+		hide  = false
 		title = "Get In Touch"
 		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
 

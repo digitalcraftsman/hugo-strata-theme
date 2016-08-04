@@ -4,9 +4,17 @@
 
 		{{ "<!-- Main -->" | safeHTML }}
 		<div id="main">
-			{{ partial "about" . }}
-			{{ partial "portfolio" . }}
-			{{ partial "contact" . }}
+			{{ if not .Site.Params.about.hide }}
+				{{ partial "about" . }}
+			{{ end }}
+
+			{{ if not .Site.Params.portfolio.hide }}
+				{{ partial "portfolio" . }}
+			{{ end }}
+
+			{{ if not .Site.Params.contact.hide }}
+				{{ partial "contact" . }}
+			{{ end }}
 		</div>
 
 		{{ partial "footer" . }}
