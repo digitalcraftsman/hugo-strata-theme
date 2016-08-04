@@ -43,3 +43,7 @@
 <script src="{{ .Site.BaseURL }}js/main.js"></script>
 
 {{ template "_internal/google_analytics_async.html" . }}
+
+{{ range .Site.Params.custom_js }}
+<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}

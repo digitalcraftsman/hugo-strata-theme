@@ -17,6 +17,10 @@ paginate = 10
 	# Format dates with Go's time formatting
 	date_format = "2006-01-02"
 
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = ["css.css"]
+	custom_css  = ["js.js"]
+
 
 	[params.sidebar]
 		# Replace the avatar with a picture of your own under static/images
