@@ -40,10 +40,6 @@ paginate = 10
 		]
 
 
-	[params.recentposts]
-		hide = false
-		title = "Recent posts"
-
 	[params.about]
 		hide  = false
 		title = "Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque."
