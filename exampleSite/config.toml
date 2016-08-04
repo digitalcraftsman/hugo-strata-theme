@@ -25,6 +25,7 @@ theme = "hugo-strata-theme"
 		facebook = ""
 		googleplus = ""
 		flickr = ""
+		linkedin = ""
 
 		copyright = [
 			"&copy; John Doe",
