@@ -3130,3 +3130,19 @@
 	.recent-post {
 		margin: .2em 0 .2em 0;
 	}
+
+	#sidebar {
+		margin-top: 1.5em;
+	}
+
+	#sidebar ul li {
+		list-style: none;
+		font-size: 1.35em;
+		line-height: 1.5em;
+	}
+
+	#sidebar ul li a,
+	#sidebar ul li a a:visited {
+		color: #a2a2a2;
+		text-decoration: none;
+	}
