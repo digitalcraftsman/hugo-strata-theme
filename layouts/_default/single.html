@@ -1,4 +1,5 @@
 {{ define "main" }}
+	<h1>{{ .Title }}</h1>
 	<span>
 	    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
 	    <time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time>&nbsp;&nbsp;
