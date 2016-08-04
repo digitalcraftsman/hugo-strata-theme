@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Strata"
 theme = "hugo-strata-theme"
 disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
 # Define how many posts should appear on a site
 paginate = 10
 
@@ -11,9 +13,6 @@ paginate = 10
     # information about you and your website.
 	name = "Your name"
 	description = "Describe your website"
-
-	# Enable Google Analytics by inserting your tracking code
-	googleAnalytics = ""
 
 	# Format dates with Go's time formatting
 	date_format = "2006-01-02"
