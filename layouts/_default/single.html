@@ -1,45 +1,34 @@
-{{ partial "head" . }}
-	<body id="top">
-		{{ partial "header" . }}
+{{ define "main" }}
+	<span>
+	    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
+	    <time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time>&nbsp;&nbsp;
 
-		{{ "<!-- Main -->" | safeHTML }}
-		<div id="main">
-            <h1>{{ .Title }}</h1>
+	    {{ if isset .Params "categories" }}
+	        {{ $categoriesLen := len .Params.categories }}
+	        {{ if gt $categoriesLen 0 }}
+	            <i class="fa fa-folder"></i>&nbsp;&nbsp;
+	            {{ range $k, $v := .Params.categories }}
+	            <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>
+	            {{ if lt $k (sub $categoriesLen 1) }}&middot;{{ end }}
+	            {{ end }}
+	        {{ end }}
+	    {{ end }}
 
-            <span>
-                <i class="fa fa-calendar"></i>&nbsp;&nbsp;
-                <time datetime="{{ .Date }}">{{ .Date.Format .Site.Params.date_format }}</time>&nbsp;&nbsp;
+	    {{ if isset .Params "tags" }}
+	       {{ $tagsLen := len .Params.tags }}
+	       {{ if gt $tagsLen 0 }}
+	           &nbsp;&nbsp;<i class="fa fa-tags"></i>&nbsp;&nbsp;
+	           {{ range $k, $v := .Params.tags }}
+	           <a class="article-category-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>
+	           {{ if lt $k (sub $tagsLen 1) }}&middot;{{ end }}
+	           {{ end }}
+	       {{ end }}
+	    {{ end }}
+	</span>
 
-                {{ if isset .Params "categories" }}
-                    {{ $categoriesLen := len .Params.categories }}
-                    {{ if gt $categoriesLen 0 }}
-                        <i class="fa fa-folder"></i>&nbsp;&nbsp;
-                        {{ range $k, $v := .Params.categories }}
-                        <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize | lower }}">{{ . }}</a>
-                        {{ if lt $k (sub $categoriesLen 1) }}&middot;{{ end }}
-                        {{ end }}
-                    {{ end }}
-                {{ end }}
+	<p>
+	    {{ .Content }}
+	</p>
 
-                {{ if isset .Params "tags" }}
-                   {{ $tagsLen := len .Params.tags }}
-                   {{ if gt $tagsLen 0 }}
-                       &nbsp;&nbsp;<i class="fa fa-tags"></i>&nbsp;&nbsp;
-                       {{ range $k, $v := .Params.tags }}
-                       <a class="article-category-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize | lower }}">{{ . }}</a>
-                       {{ if lt $k (sub $tagsLen 1) }}&middot;{{ end }}
-                       {{ end }}
-                   {{ end }}
-                {{ end }}
-            </span>
-
-            <p>
-                {{ .Content }}
-            </p>
-
-            {{ template "_internal/disqus.html" . }}
-		</div>
-
-		{{ partial "footer" . }}
-	</body>
-</html>
+	{{ template "_internal/disqus.html" . }}
+{{ end }}

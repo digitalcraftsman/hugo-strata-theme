@@ -1,17 +1,8 @@
-{{ partial "head" . }}
-	<body id="top">
-		{{ partial "header" . }}
+{{ define "main" }}
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
 
-		{{ "<!-- Main -->" | safeHTML }}
-		<div id="main">
-            {{ $paginator := .Paginate .Data.Pages }}
-            {{ range $paginator.Pages }}
-                {{ .Render "summary" }}
-            {{ end }}
-
-            {{ partial "pagination" . }}
-		</div>
-
-		{{ partial "footer" . }}
-	</body>
-</html>
+    {{ partial "pagination" . }}
+{{ end }}

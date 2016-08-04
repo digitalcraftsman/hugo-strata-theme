@@ -1,22 +1,13 @@
-{{ partial "head" . }}
-	<body id="top">
-		{{ partial "header" . }}
+{{ define "main" }}
+	{{ if not .Site.Params.about.hide }}
+		{{ partial "about" . }}
+	{{ end }}
 
-		{{ "<!-- Main -->" | safeHTML }}
-		<div id="main">
-			{{ if not .Site.Params.about.hide }}
-				{{ partial "about" . }}
-			{{ end }}
+	{{ if not .Site.Params.portfolio.hide }}
+		{{ partial "portfolio" . }}
+	{{ end }}
 
-			{{ if not .Site.Params.portfolio.hide }}
-				{{ partial "portfolio" . }}
-			{{ end }}
-
-			{{ if not .Site.Params.contact.hide }}
-				{{ partial "contact" . }}
-			{{ end }}
-		</div>
-
-		{{ partial "footer" . }}
-	</body>
-</html>
+	{{ if not .Site.Params.contact.hide }}
+		{{ partial "contact" . }}
+	{{ end }}
+{{ end }}
