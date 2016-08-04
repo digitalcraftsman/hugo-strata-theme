@@ -5,26 +5,10 @@ The Strata theme is a responsive and minimal one-page-portfolio based on the sel
 ![Screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-strata-theme/dev/images/screenshot.png)
 
 
-## Contents
-
-- [Installation](#installation)
-- [Getting started](#getting-started)
-    - [The config file](#the-config-file) 
-    - [Sidebar](#sidebar)
-    - [Build up your portfolio](#build-up-your-portfolio)
-    - [Make the contact form working](#make-the-contact-form-working)
-    - [Nearly finished](#nearly-finished)
-- [Contributing](#contributing)
-- [License](#license)
-- [Annotations](#annotations)
-
-
 ## Installation
 
 Inside the folder of your Hugo site run:
 
-    $ mkdir themes
-    $ cd themes
     $ git clone https://github.com/digitalcraftsman/hugo-strata-theme.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
@@ -80,18 +64,43 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 5. You're done. Happy mailing!
 
 
+### Menu
+
+You can also define the items menu entries as you like in the left sidebar. E.g. let's link a post that you've written. We can do this in the frontmatter of the post's content file by setting `menu` to `main`.
+
+```
++++
+menu = "main"
++++
+```
+
+Alternatively, we can add entries from the config file. Back in the config.toml you'll find a section for the menu:
+
+```
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 0
+```
+
+The `weight` attribute allows your to change the order of the entries. Heavier weighted entries appear further down in the menu.
+
 ### Nearly finished
 
-In order to see your site in action, run Hugo's built-in local server. 
+In order to see your site in action, run Hugo's built-in local server.
 
-    $ hugo server -w
+    $ hugo server
 
 Now enter [`localhost:1313`](//localhost:1313) in the address bar of your browser.
 
 To be able to access your site from anywhere, use the following:
 
-    $ hugo server -w --bind=[Your IP] --port=80 --baseURL=https://example.com --appendPort=false
+    $ hugo server --bind=[Your IP] --port=80 --baseURL=https://example.com --appendPort=false
 
+
+## Changelog
+
+All modifications to this theme are listed in the [Changelog](//github.com/digitalcraftsman/hugo-strata-theme/blob/master/CHANGELOG.md).
 
 ## Contributing
 
@@ -105,4 +114,7 @@ This theme is released under the Creative Commons Attribution 3.0 Unported  Lice
 
 ## Annotations
 
-Thanks to [Steve Francia](//github.com/spf13) for creating [Hugo](//gohugo.io) and the awesome community around the project.
+Thanks to
+
+- [HTML5UP](//html5up.net/) for creating the original theme
+- [Steve Francia](//github.com/spf13) for creating [Hugo](//gohugo.io) and the awesome community around the project.
