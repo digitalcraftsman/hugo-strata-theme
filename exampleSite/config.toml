@@ -18,8 +18,8 @@ paginate = 10
 	date_format = "2006-01-02"
 
 	# Add custom assets with their paths relative to the static folder
-	custom_js   = ["css.css"]
-	custom_css  = ["js.js"]
+	custom_js   = []
+	custom_css  = []
 
 
 	[params.sidebar]
