@@ -3146,3 +3146,13 @@
 		color: #a2a2a2;
 		text-decoration: none;
 	}
+
+
+/*
+ * 	CUSTOM CSS
+ */
+
+ .recent-posts li {
+	 font-size: 20px;
+	 line-height: 36px;
+ }
