@@ -3,8 +3,7 @@
         <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h1>
 
-    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
-    <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
+    {{ partial "post-meta" . }}
 </span>
 
 <p>{{ .Summary }}</p>
