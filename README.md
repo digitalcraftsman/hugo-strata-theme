@@ -9,6 +9,7 @@ The Strata theme is a responsive and minimal one-page-portfolio based on the sel
 
 Inside the folder of your Hugo site run:
 
+    $ cd themes
     $ git clone https://github.com/digitalcraftsman/hugo-strata-theme.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
