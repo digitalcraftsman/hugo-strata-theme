@@ -25,6 +25,9 @@
 		{{ with .Site.Params.contact.email }}
 		<li><a href="{{ $.Site.BaseURL }}#contact-form" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 		{{ end }}
+		{{ if not .Site.Params.rss.hide }}
+		<li><a href="{{ $.Site.BaseURL }}/index.xml" class="icon fa-rss"><span class="label">RSS</span></a></li>
+		{{ end }}
 	</ul>
 
 	<ul class="copyright">
