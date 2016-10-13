@@ -27,6 +27,10 @@
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 		{{ "<!--[if lte IE 8]><link rel='stylesheet' href='{{ .Site.BaseURL }}/css/ie8.css' /><![endif]-->" | safeHTML}}
 
+		{{ if .RSSlink }}
+		<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+		<link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+		{{ end }}
 		{{ range .Site.Params.custom_css }}
 		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 		{{ end }}
