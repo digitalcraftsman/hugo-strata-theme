@@ -18,6 +18,7 @@
 		<meta name="og:site_name" content="{{ .Site.Title }}">
 		<meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 		<meta name="og:url" content="{{ .Permalink }}">
+		<meta name="og:image" content="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}">
 		{{ end }}
 
 		{{ .Hugo.Generator }}
