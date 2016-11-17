@@ -28,7 +28,7 @@
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
 		{{ "<!--[if lte IE 8]>" | safeHTML }}<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/ie8.css">{{ "<![endif]-->" | safeHTML}}
 
-		{{ with .RSSlink }}
+		{{ with .RSSLink }}
 		<link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 		<link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
 		{{ end }}
