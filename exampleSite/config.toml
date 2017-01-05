@@ -30,6 +30,7 @@ paginate = 10
 		# The icons will be shown if you enter your username
 		twitter = "spf13"
 		github = "spf13"
+		gitlab = "spf13"
 		dribbble = ""
 		facebook = ""
 		googleplus = ""
