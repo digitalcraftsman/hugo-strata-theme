@@ -101,6 +101,8 @@ paginate = 10
 		title = "Get In Touch"
 		content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
 
+		# This can be exact coordinates or a searchable address in google maps
+		gmaps_address = "39.7889055,-120.5443524"
 		address = [
 			"1234 Somewhere Rd.",
 			"Nashville, TN 00000",
