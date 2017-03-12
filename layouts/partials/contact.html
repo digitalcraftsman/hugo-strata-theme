@@ -29,9 +29,15 @@
 				{{ if isset .Site.Params.contact "address" }}
 				<li>
 					<h3 class="icon fa-home"><span class="label"></span></h3>
+					{{ if isset .Site.Params.contact "gmaps_address" }}
+					<a href="https://maps.google.com/?q={{ .Site.Params.contact.gmaps_address}}">
+					{{ end }}
 					{{ range .Site.Params.contact.address }}
 						{{ . }}<br />
-					{{ end}}
+					{{ end }}
+					{{ if isset .Site.Params.contact "gmaps_address" }}
+					</a>
+					{{ end }}
 				</li>
 				{{ end }}
 				{{ if isset .Site.Params.contact "phone" }}
