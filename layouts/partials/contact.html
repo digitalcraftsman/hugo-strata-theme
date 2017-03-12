@@ -43,7 +43,7 @@
 				{{ if isset .Site.Params.contact "phone" }}
 				<li>
 					<h3 class="icon fa-mobile"><span class="label"></span></h3>
-					{{ .Site.Params.contact.phone }}
+					<a href="tel:{{ .Site.Params.contact.phone | replaceRE "[\\s-]" "$1" }}">{{ .Site.Params.contact.phone }}</a>
 				</li>
 				{{ end }}
 				{{ if isset .Site.Params.contact "jabber" }}
