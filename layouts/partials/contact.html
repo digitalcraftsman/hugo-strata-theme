@@ -55,7 +55,7 @@
 				{{ if isset .Site.Params.contact "email" }}
 				<li>
 					<h3 class="icon fa-envelope-o"><span class="label"></span></h3>
-					<a href="#">{{ .Site.Params.contact.email }}</a>
+					<a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a>
 				</li>
 				{{ end }}
 			</ul>
