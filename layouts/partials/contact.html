@@ -2,7 +2,7 @@
 <section>
 	{{ if isset .Site.Params.contact "email" }}
 		{{ with .Site.Params.contact.title }}<h2>{{ . }}</h2>{{ end }}
-		{{ with .Site.Params.contact.content }}<p>{{ . }}</p>{{ end }}
+		{{ with .Site.Params.contact.content }}<p>{{ . | markdownify }}</p>{{ end }}
 	{{ end }}
 	<div class="row" id="contact-form">
 		{{ if (isset .Site.Params.contact "email") | and (gt (len .Site.Params.contact.email) 0) }}
