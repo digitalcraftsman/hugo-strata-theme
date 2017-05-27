@@ -1,5 +1,5 @@
 {{ "<!-- portfolio -->" | safeHTML }}
-<section>
+<section id="two">
 	{{ with .Site.Params.portfolio.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
 	<div class="row">
 		{{ range .Site.Params.portfolio.gallery }}
