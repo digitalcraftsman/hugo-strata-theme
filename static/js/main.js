@@ -105,7 +105,7 @@
 						overlayOpacity: 0.85,
 						popupCloserText: '',
 						popupLoaderText: '',
-						selector: '.work-item a.image',
+						selector: '.work-item a.js-image',
 						usePopupCaption: true,
 						usePopupDefaultStyling: false,
 						usePopupEasyClose: false,

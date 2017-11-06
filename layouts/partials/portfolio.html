@@ -4,7 +4,13 @@
 	<div class="row">
 		{{ range .Site.Params.portfolio.gallery }}
 		<article class="6u 12u$(xsmall) work-item">
-			<a href="{{ $.Site.BaseURL }}images/{{ .image }}" class="image fit thumb"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
+
+			{{ if isset . "link" }}
+				<a href="{{ $.Site.BaseURL }}portfolio/{{ .link }}" class="image fit thumb"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
+			{{ else }}
+				<a href="{{ $.Site.BaseURL }}images/{{ .image }}" class="image fit thumb js-image"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
+			{{ end }}
+			
 			<h3>{{ .title | markdownify }}</h3>
 			<p>{{ .description | markdownify }}</p>
 		</article>
