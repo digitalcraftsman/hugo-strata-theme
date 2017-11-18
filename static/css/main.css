@@ -2462,11 +2462,9 @@
 
 	#header {
 		background-color: #1f1815;
-		background-attachment: scroll,								fixed;
 		background-image: url("images/overlay.png"), url("../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-repeat: repeat, no-repeat;
+		background-size: cover, cover;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
