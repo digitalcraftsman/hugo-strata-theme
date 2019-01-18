@@ -25,8 +25,11 @@
 		{{ with .Site.Params.sidebar.flickr }}
 		<li><a href="//flickr.com/photos/{{ . }}" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
 		{{ end }}
-		{{ with .Site.Params.contact.email }}
-		<li><a href="{{ $.Site.BaseURL }}#contact-form" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+		{{ if not .Site.Params.contact.hide }}
+			{{ with .Site.Params.contact.email }}
+			<li><a href="{{ $.Site.BaseURL }}#contact-form" class="icon fa-envelope-o"><span
+					 class="label">Email</span></a></li>
+			{{ end }}
 		{{ end }}
 		{{ if not .Site.Params.rss.hide }}
 		<li><a href="{{ if $.RSSLink }}{{ $.RSSLink }}{{ else }}{{ $.Site.RSSLink }}{{ end }}" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
