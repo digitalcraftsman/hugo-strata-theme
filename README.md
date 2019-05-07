@@ -2,7 +2,7 @@
 
 The Strata theme is a responsive and minimal one-page-portfolio based on the self-named template made by [HTML5UP](//html5up.net/). Noteworthy features of this Hugo theme are a custom about section, a portfolio with gallery for photographs or client works and a contact form.
 
-![Screenshot](dev/images/screenshot.png)
+![Screenshot](images/screenshot.png)
 
 
 ## Installation
@@ -22,25 +22,25 @@ After installing the Strata Theme successfully it requires a just a few more ste
 
 ### The config file
 
-Take a look inside the [`exampleSite`](tree/dev/exampleSite) folder of this theme. You'll find a file called [`config.toml`](dev/exampleSite/config.toml). To use it, copy the [`config.toml`](dev/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
+Take a look inside the [`exampleSite`](tree/exampleSite) folder of this theme. You'll find a file called [`config.toml`](exampleSite/config.toml). To use it, copy the [`config.toml`](exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
 
 ### Sidebar
 
-The sidebar provides a small overview of who you are. One of the first elements that will be spotted is the avatar in the sidebar. Replace it with a nice picture of you by either swapping the [`avatar.jpg`](dev/static/images/avatar.jpg) or by setting a new path to an image in [`config.toml`](dev/exampleSite/config.toml):
+The sidebar provides a small overview of who you are. One of the first elements that will be spotted is the avatar in the sidebar. Replace it with a nice picture of you by either swapping the [`avatar.jpg`](static/images/avatar.jpg) or by setting a new path to an image in [`config.toml`](exampleSite/config.toml):
 
 ```toml
 [params.sidebar]
     avatar = "avatar.jpg"
 ```
 
-The path is relative to [`./static/images`](dev/static/images).
+The path is relative to [`./static/images`](static/images).
 
 Last but not least add a few words about you and your work.
 
 
 ### Build up your portfolio
 
-As photograph or freelancer, your most important piece in the resume is the work you've done. Within the [`config.toml`](dev/exampleSite/config.toml) add the following snippet to add a new item to the gallery:
+As photograph or freelancer, your most important piece in the resume is the work you've done. Within the [`config.toml`](exampleSite/config.toml) add the following snippet to add a new item to the gallery:
 
 ```toml
 [params.portfolio]
@@ -58,7 +58,7 @@ As photograph or freelancer, your most important piece in the resume is the work
 
 Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-1. Enter your email address under 'email' in the [`config.toml`](dev/exampleSite/config.toml)
+1. Enter your email address under 'email' in the [`config.toml`](exampleSite/config.toml)
 2. Upload the generated site to your server
 3. Send a dummy email yourself to confirm your account
 4. Click the confirm link in the email from [formspree.io](//formspree.io/)
