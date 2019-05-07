@@ -22,7 +22,7 @@ After installing the Strata Theme successfully it requires a just a few more ste
 
 ### The config file
 
-Take a look inside the [`exampleSite`](tree/exampleSite) folder of this theme. You'll find a file called [`config.toml`](exampleSite/config.toml). To use it, copy the [`config.toml`](exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
+Take a look inside the [`exampleSite`](/exampleSite) folder of this theme. You'll find a file called [`config.toml`](exampleSite/config.toml). To use it, copy the [`config.toml`](exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
 
 ### Sidebar
 
@@ -105,7 +105,7 @@ All modifications to this theme are listed in the [Changelog](CHANGELOG.md).
 
 ## Contributing
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](issues) to let me know. Or make directly a [pull request](pulls).
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](../../issues) to let me know. Or make directly a [pull request](../../pulls).
 
 
 ## License
