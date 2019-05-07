@@ -2,7 +2,7 @@
 
 The Strata theme is a responsive and minimal one-page-portfolio based on the self-named template made by [HTML5UP](//html5up.net/). Noteworthy features of this Hugo theme are a custom about section, a portfolio with gallery for photographs or client works and a contact form.
 
-![Screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-strata-theme/dev/images/screenshot.png)
+![Screenshot](dev/images/screenshot.png)
 
 
 ## Installation
@@ -10,7 +10,7 @@ The Strata theme is a responsive and minimal one-page-portfolio based on the sel
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/digitalcraftsman/hugo-strata-theme.git
+    $ git clone https://github.com/Programazing/hugo-strata-theme.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -22,25 +22,25 @@ After installing the Strata Theme successfully it requires a just a few more ste
 
 ### The config file
 
-Take a look inside the [`exampleSite`](https://github.com/digitalcraftsman/hugo-strata-theme/tree/dev/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
+Take a look inside the [`exampleSite`](tree/dev/exampleSite) folder of this theme. You'll find a file called [`config.toml`](dev/exampleSite/config.toml). To use it, copy the [`config.toml`](dev/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
 
 ### Sidebar
 
-The sidebar provides a small overview of who you are. One of the first elements that will be spotted is the avatar in the sidebar. Replace it with a nice picture of you by either swapping the [`avatar.jpg`](https://github.com/digitalcraftsman/hugo-strata-theme/blob/dev/static/images/avatar.jpg) or by setting a new path to an image in [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml):
+The sidebar provides a small overview of who you are. One of the first elements that will be spotted is the avatar in the sidebar. Replace it with a nice picture of you by either swapping the [`avatar.jpg`](dev/static/images/avatar.jpg) or by setting a new path to an image in [`config.toml`](dev/exampleSite/config.toml):
 
 ```toml
 [params.sidebar]
     avatar = "avatar.jpg"
 ```
 
-The path is relative to [`./static/images`](https://github.com/digitalcraftsman/hugo-strata-theme/tree/dev/static/images).
+The path is relative to [`./static/images`](dev/static/images).
 
 Last but not least add a few words about you and your work.
 
 
 ### Build up your portfolio
 
-As photograph or freelancer, your most important piece in the resume is the work you've done. Within the [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml) add the following snippet to add a new item to the gallery:
+As photograph or freelancer, your most important piece in the resume is the work you've done. Within the [`config.toml`](dev/exampleSite/config.toml) add the following snippet to add a new item to the gallery:
 
 ```toml
 [params.portfolio]
@@ -58,7 +58,7 @@ As photograph or freelancer, your most important piece in the resume is the work
 
 Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/exampleSite/config.toml)
+1. Enter your email address under 'email' in the [`config.toml`](dev/exampleSite/config.toml)
 2. Upload the generated site to your server
 3. Send a dummy email yourself to confirm your account
 4. Click the confirm link in the email from [formspree.io](//formspree.io/)
@@ -101,16 +101,16 @@ To be able to access your site from anywhere, use the following:
 
 ## Changelog
 
-All modifications to this theme are listed in the [Changelog](//github.com/digitalcraftsman/hugo-strata-theme/blob/master/CHANGELOG.md).
+All modifications to this theme are listed in the [Changelog](CHANGELOG.md).
 
 ## Contributing
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/digitalcraftsman/hugo-strata-theme/issues) to let me know. Or make directly a [pull request](//github.com/digitalcraftsman/hugo-strata-theme/pulls).
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](issues) to let me know. Or make directly a [pull request](pulls).
 
 
 ## License
 
-This theme is released under the Creative Commons Attribution 3.0 Unported  License. For more information read the [License](//github.com/digitalcraftsman/hugo-strata-theme/blob/dev/LICENSE.md).
+This theme is released under the Creative Commons Attribution 3.0 Unported  License. For more information read the [License](LICENSE.md).
 
 
 ## Annotations
@@ -119,3 +119,4 @@ Thanks to
 
 - [HTML5UP](//html5up.net/) for creating the original theme
 - [Steve Francia](//github.com/spf13) for creating [Hugo](//gohugo.io) and the awesome community around the project.
+- [digitalcraftsman](//github.com/digitalcraftsman) for creating the first interation of the hugo-strata-theme
