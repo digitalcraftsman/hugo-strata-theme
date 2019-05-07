@@ -1,6 +1,6 @@
-# Strata Theme
+# Strata Theme II
 
-The Strata theme is a responsive and minimal one-page-portfolio based on the self-named template made by [HTML5UP](//html5up.net/). Noteworthy features of this Hugo theme are a custom about section, a portfolio with gallery for photographs or client works and a contact form.
+Strata Theme II is a responsive and minimal one-page-portfolio based on the self-named template made by [HTML5UP](//html5up.net/). Noteworthy features of this Hugo theme are a custom about section, a portfolio with gallery for photographs or pages for client works, and a contact form.
 
 ![Screenshot](images/screenshot.png)
 
@@ -10,14 +10,14 @@ The Strata theme is a responsive and minimal one-page-portfolio based on the sel
 Inside the folder of your Hugo site run:
 
     $ cd themes
-    $ git clone https://github.com/Programazing/hugo-strata-theme.git
+    $ git clone https://github.com/Programazing/hugo-strata-theme-II.git
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
 
 ## Getting started
 
-After installing the Strata Theme successfully it requires a just a few more steps to get your site finally running.
+After installing the Strata Theme II successfully it requires a just a few more steps to get your site finally running.
 
 
 ### The config file
