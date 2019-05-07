@@ -1,7 +1,7 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
 title = "Strata"
-theme = "hugo-strata-theme"
+theme = "hugo-strata-theme-II"
 disqusShortname = "spf13"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
