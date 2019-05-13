@@ -19,7 +19,11 @@
 		<meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 		<meta name="og:url" content="{{ .Permalink }}">
 		{{ if not .Site.Params.avatar.hide }}
-		<meta name="og:image" content="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}">
+			{{ if eq .Site.Params.sidebar.use_remote_avatar true }}
+				<meta name="og:image" content="{{ .Site.Params.sidebar.avatar }}">
+			{{ else }}
+				<meta name="og:image" content="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}">
+			{{ end }}
 		{{ end }}
 		{{ end }}
 
