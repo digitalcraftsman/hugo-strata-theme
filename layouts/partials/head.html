@@ -23,6 +23,14 @@
 		{{ end }}
 		{{ end }}
 
+		{{ if .Site.Params.sidebar.twitter}}
+		<meta name="twitter:site" content="summary">
+		<meta name="twitter:creator" content="@{{ .Site.Params.sidebar.twitter }}">
+		<meta name="twitter:title" content="{{$.Params.title}}">
+		<meta name="twitter:description" content="{{$.Params.description}}">
+		<meta name="twitter:image" content="{{$.Params.featured_image}}">
+		{{ end }}
+
 		{{ hugo.Generator }}
 
 		{{ "<!--[if lte IE 8]>" | safeHTML }}<script src='{{ .Site.BaseURL }}js/ie/html5shiv.js'></script>{{ "<![endif]-->" | safeHTML}}
