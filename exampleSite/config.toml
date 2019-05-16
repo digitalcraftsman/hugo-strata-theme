@@ -8,6 +8,11 @@ googleAnalytics = ""
 # Define how many posts should appear on a site
 paginate = 10
 
+# Configure BlackFriday Markdown rendering.
+# See: https://gohugo.io/content-management/formats/#configure-blackfriday-markdown-rendering
+[blackfriday]
+  hrefTargetBlank = true
+
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
