@@ -6,6 +6,13 @@
 	</span>
 
 	<p>
+		{{ if $.Params.featured_image }}
+			{{ if ne $.Params.featured_image " "}}
+			<div class="image fit">
+				<img src="{{ printf "%s" $.Params.featured_image }}">
+			</div>
+			{{ end }}
+		{{ end }}
 	    {{ .Content }}
 	</p>
 
