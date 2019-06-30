@@ -6,7 +6,11 @@
 		<article class="6u 12u$(xsmall) work-item">
 			
 			{{ if isset . "link" }}
-				<a href="{{ $.Site.BaseURL }}portfolio/{{ .link }}" class="image fit thumb"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
+				{{ if isset . "remote_thumb" }}
+					<a href="{{ $.Site.BaseURL }}portfolio/{{ .link }}" class="image fit thumb"><img src="{{ .remote_thumb }}" alt="" /></a>
+				{{ else }}
+					<a href="{{ $.Site.BaseURL }}portfolio/{{ .link }}" class="image fit thumb"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
+				{{ end }}
 			{{ else }}
 				<a href="{{ $.Site.BaseURL }}images/{{ .image }}" class="image fit thumb js-image"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
 			{{ end }}

@@ -87,7 +87,8 @@ paginate = 10
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			thumb = "thumbs/04.jpg"
+			# using "remote_thumb" will load a remote image
+			remote_thumb = 'https://via.placeholder.com/370x217'
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
 			# Adding "link" will create a link rather than a popup image
