@@ -36,6 +36,7 @@ paginate = 10
 		gitlab = "spf13"
 		dribbble = ""
 		facebook = ""
+    instagram = "test"
 		googleplus = ""
 		flickr = ""
 		linkedin = ""
