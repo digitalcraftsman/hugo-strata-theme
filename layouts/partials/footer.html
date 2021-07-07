@@ -10,6 +10,9 @@
 		{{ with .Site.Params.sidebar.twitter }}
 		<li><a href="//twitter.com/{{ . }}" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 		{{ end }}
+		{{ with .Site.Params.sidebar.youtube }}
+		<li><a href="//youtube.com/user/{{ . }}" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+		{{ end }}
 		{{ with .Site.Params.sidebar.github }}
 		<li><a href="//github.com/{{ . }}" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
 		{{ end }}
