@@ -59,6 +59,7 @@ paginate = 10
 
 		# The images and thumbnails are stored under static/images
 		# Create and change subfolders as you like
+
 		[[params.portfolio.gallery]]
 			image = "fulls/01.jpg"
 			thumb = "thumbs/01.jpg"
@@ -66,10 +67,11 @@ paginate = 10
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "fulls/02.jpg"
 			thumb = "thumbs/02.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
+			# Adding "link" will create a link rather than a popup image
+			link = "02"
 
 		[[params.portfolio.gallery]]
 			image = "fulls/03.jpg"
@@ -78,10 +80,11 @@ paginate = 10
 			description = "Lorem ipsum dolor sit amet."
 
 		[[params.portfolio.gallery]]
-			image = "fulls/04.jpg"
 			thumb = "thumbs/04.jpg"
 			title = "Lorem ipsum dolor."
 			description = "Lorem ipsum dolor sit amet."
+			# Adding "link" will create a link rather than a popup image
+			link = "04"
 
 		[[params.portfolio.gallery]]
 			image = "fulls/05.jpg"
